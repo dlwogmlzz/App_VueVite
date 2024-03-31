@@ -1,16 +1,16 @@
 <template>
 	<div>
 		<div>
-			<h1 class="text-2xl font-bold mb-5">할일 앱🗒</h1>
+			<h1 class="text-2xl font-bold mb-5">するべきこと🗒</h1>
 			<span>
 				<input class="h-7 m-1 border-2 border-solid border-gray-600 rounded" type="text" v-model="newTodo">
 			</span>
 			<span>
-				<button class="p-1 m-1 bg-green-500 hover:bg-green-700 text-slate-50 rounded" @click="addTodo">추가</button>
+				<button class="p-1 m-1 bg-green-500 hover:bg-green-700 text-slate-50 rounded" @click="addTodo">追加</button>
 			</span>
 			<!-- 일괄삭제 기능 추가 -->
 			<span>
-				<button class="p-1 mb-2 bg-red-400 hover:bg-red-500	text-slate-50 rounded" @click="delSelected">일괄삭제</button>
+				<button class="p-1 mb-2 bg-red-400 hover:bg-red-500	text-slate-50 rounded" @click="delSelected">一括削除</button>
 			</span>
 		</div>
 
@@ -50,7 +50,7 @@ const toggleChecked = (id) => {
 // 할일 추가
 function addTodo() {
 	if (newTodo.value === '') {
-		alert('할일을 입력해주세요.')
+		alert('するべきことを入力してください。')
 		return
 	}
 	// 마지막 리스트 ID정의
@@ -79,7 +79,7 @@ function toggleTodo(item) {
 // 체크된 항목 삭제
 function delSelected(id) {
   if (checkedTodos.value.length === 0) {
-    alert('선택된 항목이 없습니다.');
+    alert('選択された項目がないです。');
     return;
   }
 

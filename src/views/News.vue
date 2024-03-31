@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<h1 class="font-bold text-2xl text-center mb-5">News App📰</h1>
+		<h1 class="font-bold text-2xl text-center mb-5">ニュースアプリ📰</h1>
 		<div v-for="SingleNews in news" :key="SingleNews.id">
 			<a class="text-neutral-500 hover:text-green-500 text-sm" :href="SingleNews.url">{{ SingleNews.comments_count }} #  {{ SingleNews.title }}</a>
 			<span> / {{ SingleNews.time_ago }} / </span>

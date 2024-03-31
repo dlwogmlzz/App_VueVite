@@ -17,35 +17,35 @@
           :class="[$route.name === 'Home' ? activeClass : inactiveClass]"
           to="/"
         >
-          <span class="mx-4 font-bold text-[21px]">Home</span>
+          <span class="mx-4 font-bold text-[21px]">ホーム</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200"
           :class="[$route.name === 'Movie' ? activeClass : inactiveClass]"
           to="/movie"
         >
-          <span class="mx-4 font-bold text-[21px]">Movie App</span>
+          <span class="mx-4 font-bold text-[21px]">映画</span>
         </router-link>
         <router-link
         class="flex items-center px-6 py-2 mt-4 duration-200"
         :class="[$route.name === 'Todo' ? activeClass : inactiveClass]"
         to="/todo"
         >
-        <span class="mx-4 font-bold text-[21px]">Todo App</span>
+        <span class="mx-4 font-bold text-[21px]">するべきこと</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200"
           :class="[$route.name === 'Counter' ? activeClass : inactiveClass]"
           to="/counter"
         >
-          <span class="mx-4 font-bold text-[21px]">Counter App</span>
+          <span class="mx-4 font-bold text-[21px]">カウント</span>
         </router-link>
         <router-link
           class="flex items-center px-6 py-2 mt-4 duration-200"
           :class="[$route.name === 'News' ? activeClass : inactiveClass]"
           to="/news"
         >
-          <span class="mx-4 font-bold text-[21px]">News App</span>
+          <span class="mx-4 font-bold text-[21px]">ニュース</span>
         </router-link>
       </nav>
     </div>

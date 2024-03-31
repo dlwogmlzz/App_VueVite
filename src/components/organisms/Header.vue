@@ -46,16 +46,19 @@ const menuTitle = ref('Home');
 const updateMenuTitle = () => {
   switch (route.path) {
     case '/movie':
-      menuTitle.value = 'Movie App';
+      menuTitle.value = '映画アプリ';
       break;
     case '/todo':
-      menuTitle.value = 'Todo App';
+      menuTitle.value = 'するべきこと';
       break;
-    case '/account':
-      menuTitle.value = 'Account';
+    case '/counter':
+      menuTitle.value = 'カウント';
+      break;
+    case '/news':
+      menuTitle.value = 'ニュース';
       break;
     default:
-      menuTitle.value = 'Home';
+      menuTitle.value = 'ホーム';
   }
 };
 
